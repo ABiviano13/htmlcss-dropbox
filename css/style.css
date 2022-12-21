@@ -28,7 +28,6 @@ a{
 /* NAV-header*/
 header{
     width: 100%;
-    height: 100vh;
     display: relative;
 }
 
@@ -54,18 +53,65 @@ header .logo{
 }
 
 .button{
-    background-color: rgb(27, 81, 242);
+    background-color: #0061ff;
     color: white;
     font-size: 8px;
-    padding: 2px 5px;
+    padding: 4px 7px;
     margin-right: 5px;
 }
 
+/* HERO */
+.container-hero{
+    background-color: #b5d0e7;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    max-height: 431px;
+}
 
+.hero-section{
+    padding-top: 35px;
+    width: 696px;
+}
 
+h1{
+    font-size: 45px;
+}
 
+.col-title-hero{
+    width: 100%;
+}
+
+.col-hero{
+    flex-basis: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 20px;
+}
+
+.image-hero{
+    flex-grow: 2;
+
+}
+
+.row-two{
+    display: flex;
+    margin-top: 30px;
+}
+
+.hero-section .col-icon:after{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f063";
+    font-size: 30px;
+    position: relative;
+    top: 40px;
+}
+
+.text-hero{
+    font-size: 12px;
+}
 
 /* DEBUG */
-.debug .nav{
-    border: 1px solid black;
-}
