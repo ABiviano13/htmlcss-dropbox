@@ -112,7 +112,7 @@ header .logo{
 
 .text{
     font-size: 13px;
-    line-height: 30px;
+    line-height: 23px;
 }
 
 /* Standard */
@@ -163,7 +163,6 @@ header .logo{
     gap: 15px;
 } 
 
-
 .margin{
     margin: 50px;
 }
@@ -187,7 +186,7 @@ header .logo{
     margin: 40px 0;
 }
 
-.contact{
+.contact, .contactoffice{
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -241,4 +240,26 @@ i{
     color: #0061ff;
 }
 
+.row-84{
+    gap: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.col-8, .col-4{
+    flex-basis: calc(100% / 2);
+}
+
+.text-col8{
+    margin-top: 20px;
+}
+
+.contactoffice .button{
+    width: 224px;
+    height: 38px;
+    padding: 12px;
+    align-self: flex-end;
+    position: relative;
+    bottom: 40px;
+}
 /* DEBUG */
