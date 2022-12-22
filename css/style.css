@@ -24,16 +24,16 @@ a{
     color: currentColor;
 }
 
+*{
+    font-family: 'Open Sans', sans-serif;
+}
 /* NAV-header*/
 header{
     width: 100%;
-    display: relative;
 }
 
 .nav{
     padding: 2px;
-    display: fixed;
-    top: 0;
 }
 
 .flex{
@@ -46,7 +46,7 @@ header .logo{
     width: 60px;
 }
 
-.square{
+.menu-item{
     padding: 8px;
     font-size: 9px;
 }
@@ -54,33 +54,34 @@ header .logo{
 .button{
     background-color: #0061ff;
     color: white;
-    font-size: 8px;
+    font-size: 10px;
     padding: 4px 7px;
     margin-right: 5px;
 }
 
 /* HERO */
+.hero-section{
+    background-color: #b4d0e7;
+}
+
 .container-hero{
-    background-color: #b5d0e7;
+    padding-top: 35px;
+    max-width: 1256px;
+    padding-bottom: 10px;
 }
 
 .hero{
     display: flex;
     justify-content: center;
-    max-height: 431px;
+    flex-direction: column;
 }
 
-.hero-section{
-    padding-top: 35px;
-    width: 1256px;
-}
-
-h1{
-    font-size: 60px;
+.col-12{
+    flex-basis: 100%;
 }
 
 .col-title-hero{
-    width: 100%;
+    font-size: 35px;
 }
 
 .col-hero{
@@ -88,11 +89,11 @@ h1{
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    gap: 20px;
+    gap: 40px;
 }
 
 .image-hero{
-    flex-grow: 2;
+    flex-grow: 1;
 
 }
 
@@ -106,44 +107,67 @@ h1{
     font-weight: 900;
     content: "\f063";
     font-size: 30px;
-    position: relative;
-    top: 40px;
+    margin-top: auto;
 }
 
 .text{
-    font-size: 12px;
+    font-size: 13px;
+    line-height: 30px;
 }
 
 /* Standard */
-.container-standard{
+.standard-section{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.standard-section{
+
+.container-standard{
     margin-top: 140px;
     width: 1040px;
 }
 
-.row-stand{
+.col-button{
     display: flex;
     align-items: center;
+    gap: 10px;
+    margin-top: 25px;
 }
 
-.title-h2{
+.row-stand{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+
+.col-title{
     font-size: 20px;
+}
+
+.col{
+    position: relative;
+    padding: 30px;
+    border: 1px solid black;
 }
 
 .col-standard{
     height: 927px;
-    border: 1px solid black;
-    flex-basis: calc(100% / 3);
-    position: relative;
-    padding: 30px;
+    flex-basis: calc(100% / 4);
+    line-height: 20px;
 }
+
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+} 
+
 
 .margin{
     margin: 50px;
 }
+
 .title-icon{
     width: 100%;
     font-size: 15px;
@@ -157,20 +181,17 @@ h1{
 
 .intro{
     margin-top: 10px;
-    line-height: 25px;
 }
 
 .info{
     margin: 40px 0;
-    line-height: 23px;
 }
 
 .contact{
-    line-height: 20px;
     margin-top: 10px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid black;
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .button-big{
@@ -180,43 +201,43 @@ h1{
     padding: 1px;
     
 }
+
 .blu-button{
     text-decoration: underline;
     color: rgb(42, 107, 247);
 }
-.title-icon::before{
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f594";
+
+.icon{
+    display: flex;
+    gap: 5px;
 }
 
-.user::before{
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f007";
+.gray{
+    color: lightgray;
 }
 
-.folder::before{
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\e185";
+i{
+    margin-right: 10px;
 }
 
-.assistance::before{
+.contact::after{
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    content: "\f1e0";
+    content: "\f2d1\f2d1";
+    color: lightgray; 
+    align-self: 20px;
 }
 
 .point-important{
     margin-top: 50px;
-    line-height: 28px;
+    line-height: 20px;
 }
 
-.check:before{
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f00c";
+.point-title{
+    margin-bottom: 20px;
+}
+
+.check{
     color: #0061ff;
 }
 
