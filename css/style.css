@@ -143,6 +143,7 @@ header .logo{
 
 .col-title{
     font-size: 20px;
+    margin: 30px 0;
 }
 
 .col{
@@ -203,7 +204,7 @@ header .logo{
 
 .blu-button{
     text-decoration: underline;
-    color: rgb(42, 107, 247);
+    color: #0061ff;
 }
 
 .icon{
@@ -263,7 +264,7 @@ i{
     bottom: 40px;
 }
 
-/* Standard-section Partner */
+/* standard-section partner */
 .col-7, .col-4-{
     flex-basis: calc(100% / 3);
 }
@@ -278,4 +279,20 @@ i{
     padding: 5px;
     margin: 40px 0;
 }
+
+.justify-c{
+    justify-content: space-between;
+}
+/* standard-section operation */
+.col-operation{
+    /* padding: 80px; */
+    flex-basis: calc(100% / 4);
+    flex-wrap: wrap;
+}
+
+/* 500.000 team utilizzano dp b */
+.mgb{
+    margin-bottom: 40px;
+}
+
 /* DEBUG */
