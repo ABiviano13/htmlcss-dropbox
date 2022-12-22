@@ -164,7 +164,7 @@ header .logo{
 } 
 
 .margin{
-    margin: 50px;
+    margin: 78px;
 }
 
 .title-icon{
@@ -261,5 +261,21 @@ i{
     align-self: flex-end;
     position: relative;
     bottom: 40px;
+}
+
+/* Standard-section Partner */
+.col-7, .col-4-{
+    flex-basis: calc(100% / 3);
+}
+
+.col-7{
+    flex-grow: 1;
+}
+
+.button-partner{
+    border-style: solid;
+    width: max-content;
+    padding: 5px;
+    margin: 40px 0;
 }
 /* DEBUG */
