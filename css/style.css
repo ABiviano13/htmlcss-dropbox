@@ -27,6 +27,36 @@ a{
 *{
     font-family: 'Open Sans', sans-serif;
 }
+
+/* FLEX */
+.flex{
+    display: flex;
+}
+
+.flex-align{
+    align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.justify-bween{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.gap-10{
+    gap: 10px;
+}
+
 /* NAV-header*/
 header{
     width: 100%;
@@ -34,12 +64,6 @@ header{
 
 .nav{
     padding: 2px;
-}
-
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 header .logo{
@@ -70,11 +94,6 @@ header .logo{
     padding-bottom: 10px;
 }
 
-.hero{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
 
 .col-12{
     flex-basis: 100%;
@@ -86,8 +105,6 @@ header .logo{
 
 .col-hero{
     flex-basis: calc(100% / 3);
-    display: flex;
-    flex-direction: column;
     align-items:flex-start;
     gap: 40px;
 }
@@ -98,7 +115,6 @@ header .logo{
 }
 
 .row-two{
-    display: flex;
     margin-top: 30px;
 }
 
@@ -123,15 +139,14 @@ header .logo{
 }
 
 .container-standard{
-    margin-top: 140px;
+    margin-top: 126px;
     width: 1040px;
 }
 
 .col-button{
-    display: flex;
-    align-items: center;
     gap: 10px;
     margin-top: 25px;
+    margin-bottom: 35px;
 }
 
 .row-stand{
@@ -140,6 +155,7 @@ header .logo{
     align-items: center;
     gap: 50px;
 }
+
 
 .col-title{
     font-size: 20px;
@@ -154,18 +170,13 @@ header .logo{
 
 .col-standard{
     height: 927px;
-    flex-basis: calc(100% / 4);
+    flex-basis: calc((100% - 100px) / 3);
     line-height: 20px;
 }
 
-.flexbox{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-} 
-
-.margin{
-    margin: 78px;
+.col-stand{
+    flex-basis: 100%;
+    margin-top: 20px;
 }
 
 .title-icon{
@@ -185,20 +196,18 @@ header .logo{
 
 .info{
     margin: 40px 0;
+    gap: 30px;
 }
 
 .contact, .contactoffice{
     margin-top: 10px;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
 }
 
 .button-big{
     font-size: 10px;
-    display: flex;
-    justify-content: center;
     padding: 1px;
+    text-align: center;
     
 }
 
@@ -208,7 +217,6 @@ header .logo{
 }
 
 .icon{
-    display: flex;
     gap: 5px;
 }
 
@@ -241,13 +249,7 @@ i{
     color: #0061ff;
 }
 
-.row-84{
-    gap: 1px;
-    display: flex;
-    align-items: center;
-}
-
-.col-8, .col-4{
+.col-8, .col-4-{
     flex-basis: calc(100% / 2);
 }
 
@@ -280,19 +282,33 @@ i{
     margin: 40px 0;
 }
 
-.justify-c{
-    justify-content: space-between;
-}
 /* standard-section operation */
 .col-operation{
-    /* padding: 80px; */
     flex-basis: calc(100% / 4);
-    flex-wrap: wrap;
 }
 
 /* 500.000 team utilizzano dp b */
 .mgb{
     margin-bottom: 40px;
 }
+
+/* Log-img */
+.row-log, .row-img{
+}
+
+.col-log{
+    flex-basis: calc(100% / 3);
+}
+
+.col-img{
+    flex-basis: calc(100% / 4);
+    padding: 20px;
+}
+
+.col-text-log{
+    background-color: lightgray;
+}
+
+
 
 /* DEBUG */

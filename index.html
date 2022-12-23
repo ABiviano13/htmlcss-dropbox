@@ -12,8 +12,8 @@
 <body class="debug">
     <header class="page-content">
         <!-- nav -->
-        <nav class="nav flex">
-            <ul class="menu-nav flex">
+        <nav class="nav flex flex-align justify-bween">
+            <ul class="menu-nav flex flex-align justify-bween">
                 <li class="logo">
                     <a href="#">
                         <img src="./img/img/logo-small.png" alt="logo Dropbox">
@@ -35,7 +35,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="menu-flex flex">
+            <ul class="menu flex flex-align justify-bween">
                 <li class="menu-item">
                     <a href="#">
                         Supporto
@@ -64,7 +64,7 @@
     <main class="main-content">
         <section class="hero-section">
             <div class="container container-hero">
-                <div class="hero">
+                <div class="hero flex justify-center flex-column">
                     <div class="row row-one">
                         <div class="col-12 col-title-hero">
                             <h1>
@@ -72,8 +72,8 @@
                             </h1>
                         </div>
                     </div>
-                    <div class="row row-two">
-                        <div class="col-hero col-icon">
+                    <div class="row row-two flex">
+                        <div class="col-hero flex flex-column col-icon">
                             <div class="text text-hero">
                                 Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. <br>
                                 Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ttimizzare il flusso di lavoro esistente.
@@ -106,14 +106,15 @@
                     </div>
                 </div>
 
-                <div class="row-buttonradio row-stand">
-                    <div class="col-button">
+                <div class="row row-stand">
+                    <div class="col-button flex flex-align">
                         <input type="radio" name="button" id="fm">Fatturazione mensile
                         <input type="radio" name="button" id="fa">Fatturazione annuale
                     </div>
                 </div>
 
-                <div class="row-stand">
+                <!-- Colonna Professional : inizio -->
+                <div class="row row-stand">
                     <div class="col col-standard">
                         <div class="title-icon user ">
                             <i class="fa-solid fa-user"></i> 
@@ -129,22 +130,22 @@
                             <div class="gray">
                                 /mese
                             </div>
-                            <div class="info flex-box">
-                                <ol>
-                                    <li class="icon">
+                            <div class="info flex flex-column">
+                                <ol class="flex flex-column gap-10">
+                                    <li class="icon flex">
                                         <i class="fa-solid fa-user"></i> 
                                         1 utente
                                     </li>
-                                    <li class="icon">
+                                    <li class="icon flex">
                                         <i class="fa-solid fa-folder-closed"></i> 
-                                        5 TB di spazio di archiviazione sicuro
+                                        Tutto lo spazio di cui abbia bisogno il tuo team
                                     </li>
-                                    <li class="icon">
+                                    <li class="icon flex">
                                         <i class="fa-solid fa-share-nodes"></i>  
-                                        Funzioni di produttività premium e condivisione file semplice e sicura
+                                        Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala
                                     </li>
                                 </ol>
-                                <div class="contact">
+                                <div class="contact flex flex-column">
                                     <a class="button button-big" href="#">
                                         Prova gratis per 30 giorni
                                     </a>
@@ -157,12 +158,12 @@
                                 </div>
                                <div class="point-important">
                                    <h3 class="point-title">Punti Salienti del piano</h3>
-                                    <ol>
-                                       <li class="icon">
+                                    <ol class="flex flex-column gap-10">
+                                       <li class="icon flex">
                                           <i class="check fa-solid fa-check"></i> 
                                           Invia file fino a 100 GB con Dropbox Transfert
                                        </li>
-                                        <li class="icon">
+                                        <li class="icon flex">
                                           <i class="check fa-solid fa-check"></i>  
                                           Cartelle offline su dispositivi mobili 
                                        </li>
@@ -171,6 +172,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Colonna Professional : fine -->
+
+                    <!-- Colonna Advanced : inizio -->
                     <div class="col col-standard margin">
                         <div class="title-icon">
                             <i class="fa-solid fa-users"></i> 
@@ -186,22 +190,22 @@
                             <div class="gray">
                                 /utente/mese
                             </div>
-                            <div class="info flex-box">
-                                <ol>
-                                    <li class="icon">
+                            <div class="info flex flex-column">
+                                <ol class="flex flex-column gap-10">
+                                    <li class="icon flex">
                                         <i class="fa-solid fa-users"></i> 
                                         3 o più utenti
                                     </li>
-                                    <li class="icon">
+                                    <li class="icon flex">
                                         <i class="fa-solid fa-folder-closed"></i> 
                                         Tutto lo spazio di cui abbia bisogno il tuo team
                                     </li>
-                                    <li class="icon">
+                                    <li class="icon flex">
                                         <i class="fa-solid fa-share-nodes"></i> 
-                                        Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team
+                                        Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala
                                     </li>
                                 </ol>
-                                <div class="contact">
+                                <div class="contact flex flex-column">
                                     <a class="button button-big" href="#">
                                         Prova gratis per 30 giorni
                                     </a>
@@ -214,24 +218,24 @@
                                 </div>
                                 <div class="point-important">
                                    <h3 class="point-title">Punti Salienti del piano</h3>
-                                   <ol>
-                                       <li class="icon">
+                                   <ol class="flex flex-column gap-10">
+                                       <li class="icon flex">
                                           <i class="check fa-solid fa-check"></i> 
                                            Nessun limite di spazio per i file
                                        </li>
-                                        <li class="icon">
+                                        <li class="icon flex">
                                           <i class="check fa-solid fa-check"></i>  
                                           Cartelle offline su dispositivi mobili
                                         </li>
-                                         <li class="icon">
+                                         <li class="icon flex">
                                            <i class="check fa-solid fa-check"></i>  
                                            Risparmio del 50% rispetto alle iscrizioni singole
                                         </li>
-                                         <li class="icon">
+                                         <li class="icon flex">
                                            <i class="check fa-solid fa-check"></i> 
                                            Possibilità di aggiungere nuovi membri del team
                                         </li>
-                                         <li class="icon">
+                                         <li class="icon flex">
                                             <i class="check fa-solid fa-check"></i>  
                                             Gestione dei permessi in base ai ruoli
                                        </li>
@@ -240,6 +244,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Colonna Advanced : fine -->
+
+                    <!-- Colonna Enterprise : inizio -->
                     <div class="col col-standard">
                         <div class="title-icon">
                             <i class="fa-solid fa-hotel"></i> 
@@ -255,22 +262,22 @@
                             <div class="gray">
                                 -
                             </div>
-                            <div class="info flex-box">
-                                <ol>
-                                    <li class="icon">
+                            <div class="info flex flex-column">
+                                <ol class="flex flex-column gap-10">
+                                    <li class="icon flex">
                                        <i class="fa-solid fa-user"></i> 
                                        10 o più clienti
                                     </li>
-                                    <li class="icon">
+                                    <li class="icon flex">
                                         <i class="fa-solid fa-folder-closed"></i> 
-                                        Soluzioni personalizzabili per la tua azienda
+                                        Tutto lo spazio di cui abbia bisogno il tuo team
                                     </li>
-                                    <li class="icon">
+                                    <li class="icon flex">
                                         <i class="fa-solid fa-share-nodes"></i> 
                                         Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala
                                     </li>
                                 </ol>
-                                <div class="contact">
+                                <div class="contact flex flex-column">
                                     <a class="button button-big" href="#">
                                         Contattaci
                                     </a>
@@ -281,69 +288,76 @@
                                         </a>
                                     </div>
                                 </div>
-                              <div class="point-important">
-                                   <h3 class="point-title">Punti Salienti del piano</h3>
-                                   <ol>
-                                     <li class="icon">
-                                        <i class="check fa-solid fa-check"></i> 
-                                        Cartelle offline su dispositivi mobili
-                                     </li>
-                                     <li class="icon">
-                                        <i class="check fa-solid fa-check"></i>  
-                                        Servizio assistenza 24h
-                                     </li>
-                                     <li class="icon">
-                                        <i class="check fa-solid fa-check"></i>  
-                                        Possibilità di personalizzazione totale
-                                     </li>
+                                <div class="point-important">
+                                    <h3 class="point-title">Punti Salienti del piano</h3>
+                                    <ol class="flex flex-column gap-10">
+                                        <li class="icon flex">
+                                           <i class="check fa-solid fa-check"></i> 
+                                           Cartelle offline su dispositivi mobili
+                                        </li>
+                                         <li class="icon flex">
+                                            <i class="check fa-solid fa-check"></i>  
+                                            Servizio assistenza 24h
+                                        </li>
+                                         <li class="icon flex">
+                                           <i class="check fa-solid fa-check"></i>  
+                                           Possibilità di personalizzazione totale
+                                        </li>
                                    </ol>
-                              </div>
+                                </div>
                             </div>
                         
                         </div>
                     </div>
-                    <div class="row row-stand justify-c">
-                        <div class="col">
-                            <div class="row-84">
-                                <div class="col-8">
-                                    <div class="title-icon">
-                                        <i class="fa-solid fa-users"></i> 
-                                        Team
-                                    </div>
-                                    <div class="intro">
-                                        <h3>Enterprise</h3>
-                                        <div class="text">
-                                           <strong>
-                                            Contatta l'ufficio vendite per i prezzi
-                                           </strong>
-                                       </div>
-                                       <div class="text text-col8">
-                                        Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.
-                                       </div>
-                                    </div>
+                </div> 
+                <!-- Colonna Enterprice: fine -->
+
+                <!-- Colonna Enterprise (orizzontale) : inizio -->
+                <div class="row row-stand justify-bween">
+                    <div class="col col-stand">
+
+                        <div class="row-12 flex flex-align">
+                            <div class="col-8">
+                                <div class="title-icon">
+                                    <i class="fa-solid fa-users"></i> 
+                                    Team
                                 </div>
-                                <div class="col-4">
-                                   <div class="contactoffice">
-                                        <a class="button button-big mc" href="#">
-                                            Contatta l'ufficio vendite
-                                        </a>
-                                    </div>
+                                <div class="intro">
+                                    <h3>Enterprise</h3>
+                                    <div class="text">
+                                       <strong>
+                                        Contatta l'ufficio vendite per i prezzi
+                                       </strong>
+                                   </div>
+                                   <div class="text text-col8">
+                                    Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                               <div class="contactoffice flex flex-column">
+                                    <a class="button button-big flex justify-center mc" href="#">
+                                        Contatta l'ufficio vendite
+                                    </a>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                </div>   
+                </div>  
               </div>
            </div>
+           <!-- Colonna Enterprise (orizzontale) : fine -->
         </section>
-        
+
+        <!-- sezione standard - Partner : inizio -->
         <section class="standard-section">
             <div class="container container-standard">
                 <div class="row row-stand">
                     <div class="col-7 col-image">
                         <img src="./img/img/partner.png" alt="">
                     </div>
-                    <div class="col-4- flex-box">
+                    <div class="col-4- flex flex-column">
                         <div class="intro">
                             <h3>
                                 Entra in contatto con un partner Dropbox
@@ -360,9 +374,12 @@
                 </div>
             </div>
         </section>
+        <!-- sezione standard - Partner : fine -->
 
+        <!-- sezione standard - operation : inizio -->
         <section class="standard-section">
             <div class="container container-standard">
+
                 <div class="row row-stand">
                     <div class="col-title">
                         <h2>
@@ -370,8 +387,9 @@
                         </h2>
                     </div> 
                 </div>
-                <div class="row row-stand justify-c">
-                   <div class="col-operation">
+
+                <div class="row row-stand justify-bween">
+                   <div class="col-operation flex-wrap">
                      <figure>
                         <img src="./img/img/business-feature-switching-tools.png" alt="Switching-tools">
                      </figure>
@@ -384,7 +402,7 @@
                         </p>
                      </div>
                    </div>
-                   <div class="col-operation">
+                   <div class="col-operation flex-wrap">
                        <figure>
                            <img src="./img/img/business-feature-send-files-it.png" alt="files">
                        </figure>
@@ -397,7 +415,7 @@
                           </p>
                        </div>
                    </div>
-                   <div class="col-operation">
+                   <div class="col-operation flex-wrap">
                     <figure>
                         <img src="./img/img/business-feature-coordinate-it.png" alt="Coordinate Proposta Cliente">
                     </figure>
@@ -410,7 +428,7 @@
                        </p>
                     </div>
                    </div>
-                    <div class="col-operation">
+                    <div class="col-operation flex-wrap">
                         <figure>
                             <img src="./img/img/business-feature-integrations-it.png" alt="Partecipa a riunione Zoom">
                         </figure>
@@ -423,8 +441,7 @@
                            </p>
                         </div>
                     </div>
-                    <div class="col-operation">
-                        <figure>
+                    <div class="col-operation flex-wrap">
                             <img src="./img/img/business-feature-multi-device.png" alt="multi-service">
                         </figure>
                         <div class="text">
@@ -436,7 +453,7 @@
                            </p>
                         </div>
                     </div>
-                    <div class="col-operation">
+                    <div class="col-operation flex-wrap">
                         <figure>
                             <img src="./img/img/business-feature-security.png" alt="feature sicurity">
                         </figure>
@@ -450,10 +467,15 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
+        <!-- sezione standard - operation : fine -->
+
+        <!-- sezione standard - team : inizio -->
         <section class="standard-section">
             <div class="container container-standard">
+
                 <div class="row row-stand">
                     <div class="col-title">
                         <h2 class="mgb">
@@ -465,8 +487,56 @@
                         </a>
                     </div> 
                 </div>
+
             </div>
         </section>
+        <!-- sezione standard - team : inizio -->
+
+        <!-- sezione log-img - log : inizio -->
+        <section class="log-img">
+
+            <div class="row-log flex flex-wrap">
+                <div class="col-log">
+                    <div class="row-img flex">
+                        <div class="col-img flex-wrap">
+                            <img src="./img/img/designit.svg" alt="Logo designit">
+                        </div>
+                        <div class="col-img flex-wrap">
+                            <img src="./img/img/arizona_state_university.svg" alt="Arizona State University">
+                        </div>
+                        <div class="col-img flex-wrap">
+                            <img src="./img/img/university_of_florida.svg" alt="University of florida">
+                        </div>
+                        <div class="col-img flex-wrap">
+                            <img src="./img/img/topps.svg" alt="topps">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-log text col-text-log">
+                    <figure>
+                        <img src="./img/img/designit.svg" alt="Logo designit">
+                    </figure>
+                </div>
+                <div class="col-log">
+                    <div class="row-img flex flex-wrap">
+                        <div class="col-img flex-wrap">
+                            <img src="./img/img/world_bicycle_relief.svg" alt="World bicycle relief">
+                        </div>
+                        <div class="col-img flex-wrap">
+                            <img src="./img/img/hearst_corp.svg" alt="hearst-corp">
+                        </div>
+                        <div class="col-img flex-wrap">
+                            <img src="./img/img/lonely_planet.svg" alt="lonely planet">
+                        </div>
+                        <div class="col-img flex-wrap">
+                            <img src="./img/img/clear_channel.svg" alt="clear channel">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+         <!-- sezione log-img - log : fine -->
     </main>
 
     <footer>
