@@ -45,6 +45,10 @@ a{
     justify-content: space-between;
 }
 
+.justify-around{
+    justify-content: space-around;
+}
+
 .justify-center{
     justify-content: center;
 }
@@ -84,7 +88,7 @@ header .logo{
 }
 
 /* HERO */
-.hero-section{
+.color-section{
     background-color: #b4d0e7;
 }
 
@@ -139,7 +143,7 @@ header .logo{
 }
 
 .container-standard{
-    margin-top: 126px;
+    margin-top: 80px;
     width: 1040px;
 }
 
@@ -293,7 +297,8 @@ i{
 }
 
 /* Log-img */
-.row-log, .row-img{
+.log-img{
+    margin-top: 100px;
 }
 
 .col-log{
@@ -375,4 +380,17 @@ i{
     margin-top: 10px;
 }
 
+/* Drop business */
+.p-bottom{
+    padding-bottom: 80px;
+}
+
+.title-color{
+    color: #61092a;
+}
+
+.col-button{
+    background-color: white;
+    padding: 5px 20px;
+}
 /* DEBUG */
