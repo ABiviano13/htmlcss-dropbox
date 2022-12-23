@@ -128,7 +128,7 @@ header .logo{
 
 .text{
     font-size: 13px;
-    line-height: 23px;
+    line-height: 20px;
 }
 
 /* Standard */
@@ -301,14 +301,78 @@ i{
 }
 
 .col-img{
-    flex-basis: calc(100% / 4);
+    flex-basis: calc(100% / 2);
     padding: 20px;
+    background-size: 300px;
+    height: 190px;
+    position: relative;
 }
 
 .col-text-log{
     background-color: lightgray;
 }
 
+.img-200{
+    width: 200px;
+    margin: 40px;
+}
 
+.img-120{
+    width: 120px;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.green-bg{
+    background-color: #a2d39b;
+}
+.bordaux-bg{
+    background-color: #61092b;
+}
+.celestial-bg{
+    background-color: #0093ce;
+}
+.red-bg{
+    background-color: #ff1b1c;
+}
+.gray-bg{
+    background-color: #f5f5f5;
+}
+.red--bg{
+    background-color: #d5001f;
+}
+.celestial--bg{
+    background-color: #b3d0ef;
+}
+.blue-bg{
+    background-color: #032381;
+}
+.yellow-bg{
+    background-color: #ffd72f;
+}
+
+.text-cit::before{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 60px;
+	background-color: lightgray;
+}
+
+.col-text-log .text{
+    margin: 26px 0;
+}
+
+.text-cit{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.autor{
+    margin-top: 10px;
+}
 
 /* DEBUG */
