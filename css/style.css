@@ -45,10 +45,6 @@ a{
     justify-content: space-between;
 }
 
-.justify-around{
-    justify-content: space-around;
-}
-
 .justify-center{
     justify-content: center;
 }
@@ -393,4 +389,14 @@ i{
     background-color: white;
     padding: 5px 20px;
 }
-/* DEBUG */
+
+/* question */
+.col-question{
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 30px;
+}
+
+.chevron-down{
+    font-size: 10px;
+}
